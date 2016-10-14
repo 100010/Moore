@@ -1,0 +1,70 @@
+/*******************************************************/
+/* Bootstrap Fragrance v1.0                            */
+/* ©(DONGSHIH TENG) 2016                               */
+/*******************************************************/
+/* What you can find in this file                      */
+/* opacity                                             */
+/* border                                              */
+/* font                                                */
+/* ratio                                               */
+/*******************************************************/
+
+/*******************************************************/
+/* opacity                                             */
+/*******************************************************/
+$opacity-100: 1 !default;
+$opacity-90: .90 !default;
+$opacity-80: .80 !default;
+$opacity-70: .70 !default;
+$opacity-60: .60 !default;
+$opacity-50: .50 !default;
+$opacity-40: .40 !default;
+$opacity-30: .30 !default;
+$opacity-20: .20 !default;
+$opacity-10: .10 !default;
+$opacity-0: 0 !default;
+
+/*******************************************************/
+/* border                                              */
+/*******************************************************/
+$borders: 1px solid #000 !default;
+$border-radius-xs: 2px !default;
+$border-radius-sm: 3px !default;
+$border-radius-md: 4px !default;
+$border-radius-lg: 6px !default;
+$border-radius-xl: 10px !default;
+$border-radius-round: 50% !default;
+
+/*******************************************************/
+/* font                                                */
+/*******************************************************/
+// font size
+$root-font-size: 14px;
+$base-font-size: $root-font-size !default;
+$font-size-xs: $base-font-size - 3 !default;  // 11px
+$font-size-sm: $base-font-size - 1 !default;  // 13px
+$font-size-md: $base-font-size + 1 !default;  // 15px
+$font-size-lg: $base-font-size + 4 !default;  // 18px
+$font-size-xl: $base-font-size + 6 !default;  // 20px
+// heading
+$font-size-h1: 36px !default;
+$font-size-h2: 32px !default;
+$font-size-h3: 28px !default;
+$font-size-h4: 24px !default;
+$font-size-h5: 21px !default;
+$font-size-h6: 18px !default;
+// font-weight
+$font-weight-light: 300 !default;
+$font-weight-regular: 400 !default;
+$font-weight-normal: 500 !default;
+$font-weight-bold: 700 !default;
+
+/*******************************************************/
+/* ratio                                               */
+/*******************************************************/
+$gold-ratio: 8 / 13 !default;
+$gold-ratio-lg: percentage($gold-ratio);
+$gold-ratio-sm: percentage(1 - $gold-ratio);
+$silver-ratio: 7 / 12;
+$silver-ratio-lg: percentage($silver-ratio);
+$silver-ratio-sm: percentage(1 - $silver-ratio);

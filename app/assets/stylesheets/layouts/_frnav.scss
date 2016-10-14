@@ -1,0 +1,79 @@
+/*******************************************************/
+/* Nav                                                 */
+/*******************************************************/
+.navbar-custom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+  background: rgba(0, 0, 0, 0.86);
+  border-bottom: 1px solid transparent;
+  .navbar-brand {
+    font-size: 20px;
+    font-weight: 700;
+    color: $white-color;
+  }
+  .nav li a {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    color: $white-color;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .navbar-custom {
+    background: transparent;
+    border-bottom: 1px solid transparent;
+    .navbar-brand {
+      color: $white-color;
+      padding: 20px;
+      &:hover, &:focus {
+        color: $primary-color;
+      }
+    }
+    .nav li a {
+      color: $white-color;
+      padding: 20px;
+      &:hover, &:focus {
+        @include transition(all .5s);
+        font-size: 1.3em;
+        color: $primary-color;
+      }
+    }
+  }
+}
+@media only screen and (min-width: 1170px) {
+  .navbar-custom {
+    @include transition(background-color .4s);
+    @include transform(translate3d(0, 0, 0));
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    &.is-fixed {
+      position: fixed;
+      top: -61px;
+      background-color: rgba(0, 0, 0, 0.86);
+      -webkit-transition: -webkit-transform 0.3s;
+      -moz-transition: -moz-transform 0.3s;
+      transition: transform 0.3s;
+      .navbar-brand:hover,
+      .navbar-brand:focus {
+        color: $primary-color;
+      }
+      .nav li a:hover,
+      .nav li a:focus {
+        color: $primary-color;
+      }
+    }
+    &.is-visible {
+      @include transform(translate3d(0, 100%, 0));
+    }
+  }
+  // .navbar-custom.is-fixed .navbar-brand {
+  //   color: #404040;
+  // }
+  // .navbar-custom.is-fixed .nav li a {
+  //   color: #404040;
+  // }
+}

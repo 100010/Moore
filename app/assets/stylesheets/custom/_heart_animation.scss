@@ -1,0 +1,13 @@
+.heart {
+  font-size: 70px;
+  color: $pink-color;
+  -webkit-animation: heart-beats .5s infinite alternate;
+  animation: heart-beats .5s infinite alternate;
+  transform-origin: center;
+}
+@-webkit-keyframes heart-beats {
+  to { -webkit-transform: scale(1.2); }
+}
+@keyframes heart-beats {
+  to { transform: scale(1.2); }
+}

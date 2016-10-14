@@ -1,0 +1,36 @@
+/*******************************************************/
+/* Bootstrap Fragrance v1.0                            */
+/* ©(DONGSHIH TENG) 2016                               */
+/*******************************************************/
+/*******************************************************/
+/* margin                                              */
+/*******************************************************/
+.no-margin {
+  margin: 0px
+}
+$sizes: (xs: 8px, sm: 12px, md: 18px, lg: 24px, xl: 36px);
+@each $size, $pixel in $sizes {
+  .mg-#{$size} {
+    margin: $pixel;
+  }
+  .mg-tb-#{$size} {
+    margin-top: $pixel;
+    margin-bottom: $pixel;
+  }
+  .mg-lr-#{$size} {
+    margin-left: $pixel;
+    margin-right: $pixel;
+  }
+  .mg-t-#{$size} {
+    margin-top: $pixel;
+  }
+  .mg-r-#{$size} {
+    margin-right: $pixel;
+  }
+  .mg-b-#{$size} {
+    margin-bottom: $pixel;
+  }
+  .mg-l-#{$size} {
+    margin-left: $pixel;
+  }
+}

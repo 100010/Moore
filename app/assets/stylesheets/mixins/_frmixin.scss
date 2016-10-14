@@ -1,0 +1,49 @@
+/*******************************************************/
+/* Bootstrap Fragrance v1.0                            */
+/* ©(DONGSHIH TENG) 2016                               */
+/*******************************************************/
+/* What you can find in this file                      */
+/* mixin                                               */
+/*******************************************************/
+
+/*******************************************************/
+/* mixin                                               */
+/*******************************************************/
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+
+@mixin transform($args...) {
+  -webkit-transform: $args;
+  -moz-transform: $args;
+  -ms-transform: $args;
+  -o-transform: $args;
+  transform: $args;
+}
+
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  $opacity-ie: $opacity * 100;
+  filter: alpha(opacity=$opacity-ie); //for IE8
+}
+
+@mixin border-radius($args...) {
+  -webkit-border-radius: $args;
+  -moz-border-radius: $args;
+  border-radius: $args;
+}
+@mixin box-shadow($args...) {
+  -webkit-box-shadow: $args;
+  -moz-box-shadow: $args;
+  box-shadow: $args;
+}
+@mixin background-size($args...) {
+  -webkit-background-size: $args;
+  -moz-background-size: $args;
+  -o-background-size: $args;
+  background-size: $args;
+}

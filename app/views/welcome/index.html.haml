@@ -1,0 +1,102 @@
+%section#top.full-bg
+  .full-bg-content
+    .full-bg-content-inner
+      %h1 Moore
+      %hr
+      %i.fricon= fa_icon 'tasks 5x'
+      %p
+        これはタスク管理アプリのムーアだよ
+      %a.btn.btn-primary.btn-xl
+        リリースまで待ちなさい
+%section#signuplogin.signup
+  .container
+    .row
+      .col-lg-12.text-center
+        %h1 使ってみる！
+      .col-sm-5
+        .form-box
+          .form-top
+            .form-top-left
+              %h3 アカウント持っているわ！
+              %p パスワード忘れても再発行しないよ
+            -# .form-top-right
+            -#   %i.fa.fa-key
+          .form-bottom
+            = form_for (:session), url: login_path, html: { role: 'form', class:"form-horizontal" } do |f|
+              .form-group
+                = f.label :email
+                = f.email_field :email, class: "form-control", required: true
+              .form-group
+                = f.label :password
+                = f.password_field :password, class: "form-control", required: true
+              .form-group
+                = f.submit "ログイン", class: "btn"
+              -# .form-group
+              -#   %label.sr-only{:for => "form-username"} Username
+              -#   %input#form-username.form-username.form-control{:name => "form-username", :placeholder => "Username...", :type => "text"}/
+              -# .form-group
+              -#   %label.sr-only{:for => "form-password"} Password
+              -#   %input#form-password.form-password.form-control{:name => "form-password", :placeholder => "Password...", :type => "password"}/
+              -# %button.btn{:type => "submit"} ログインするよ！
+        .social-login
+          %p 他にも方法はいっぱいあるけど、どう？
+          .social-login-buttons
+            %a.btn.btn-link-1.btn-link-1-facebook{:href => "#"}
+              %i.fa.fa-facebook
+              Facebook
+            %a.btn.btn-link-1.btn-link-1-twitter{:href => "#"}
+              %i.fa.fa-twitter
+              Twitter
+            %a.btn.btn-link-1.btn-link-1-google-plus{:href => "#"}
+              %i.fa.fa-google-plus
+              Google Plus
+      .col-sm-1.middle-border
+      .col-sm-1
+      .col-sm-5
+        .form-box
+          .form-top
+            .form-top-left
+              %h3 アカウントを登録する
+              %p 下全部埋めろ！
+            -# .form-top-right
+            -#   %i.fa.fa-pencil
+          .form-bottom
+            = form_for @user, html: { role: "form", class: "form-horizontal"} do |f|
+              = f.error_messages!
+              .form-group
+                = f.label :user_name
+                = f.text_field :user_name, class: "form-control", required: true
+              .form-group
+                = f.label :email
+                = f.email_field :email, class: "form-control", required: true
+              .form-group
+                = f.label :password
+                = f.password_field :password, class: "form-control", required: true
+              .form-group
+                = f.label :gender
+                = f.select :gender, User.genders.keys{} ,{ prompt: "性別を選択してください"}, class: "form-control", required: true
+              .form-group
+                = f.label :undergraduate
+                = f.select :undergraduate, User.undergraduates.keys, { prompt: "学部を選択してください"}, class: "form-control", required: true
+              .form-group
+                = f.label :department
+                = f.select :department, User.departments.keys, { prompt: "学科を選択してください"}, class: "form-control", required: true
+              .form-group
+                = f.submit "登録する", class: "btn"
+            -# %form.registration-form{:action => "", :method => "post", :role => "form"}
+            -#   .form-group
+            -#     %label.sr-only{:for => "form-first-name"} First name
+            -#     %input#form-first-name.form-first-name.form-control{:name => "form-first-name", :placeholder => "First name", :type => "text"}/
+            -#   .form-group
+            -#     %label.sr-only{:for => "form-last-name"} Last name
+            -#     %input#form-last-name.form-last-name.form-control{:name => "form-last-name", :placeholder => "Last name", :type => "text"}/
+            -#   .form-group
+            -#     %label.sr-only{:for => "form-username"} Username
+            -#     %input#form-last-name.form-last-name.form-control{:name => "form-username", :placeholder => "Username", :type => "text"}/
+            -#   .form-group
+            -#     %label.sr-only{:for => "form-department"} 学科
+            -#     %input#form-last-name.form-last-name.form-control{:name => "form-department", :placeholder => "学科", :type => "text"}/
+            -#   .form-group
+            -#     %label.sr-only{:for => "form-email"} Email
+            -#     %input#form-email.form-email.form-control{:name => "form-email", :placeholder => "Email", :type => "text"}/
+            -#   %button.btn{:type => "submit"} 登録する!

@@ -1,0 +1,11 @@
+/*******************************************************/
+/* shadow                                              */
+/*******************************************************/
+$basic-shadow-color: rgba(0, 0, 0, 0.5);
+$sizes: (xs: 3px, sm: 5px, md: 8px, lg: 10px, xl: 12px);
+
+@each $size, $pixel in $sizes {
+    .shadow-#{$size} {
+      @include box-shadow($pixel $pixel $pixel $basic-shadow-color);
+    }
+}

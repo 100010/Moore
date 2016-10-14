@@ -1,0 +1,60 @@
+/*******************************************************/
+/* Bootstrap Fragrance v1.0                            */
+/* ©(DONGSHIH TENG) 2016                               */
+/*******************************************************/
+/* btns                                                */
+/*******************************************************/
+.btn {
+    border: 0;
+    border-radius: 0px;
+    // text-transform: uppercase;
+    font-weight: 700;
+}
+
+.btn-default {
+  border-color: $light-color;
+  background-color: $light-color;
+  @include transition(all .5s ease);
+  &:hover,
+  &:focus,
+  &.focus,
+  &:active,
+  &.active {
+    border-color: $light-color;
+    background-color: $light-color;
+  }
+}
+
+.btn-primary {
+    border-color: $primary-color;
+    color: $light-color;
+    background-color: $primary-color;
+    @include transition(all .5s ease);
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary.focus,
+.btn-primary:active,
+.btn-primary.active,
+.open > .dropdown-toggle.btn-primary {
+    border-color: $primary-color;
+    color: $light-color;
+    background-color: darken($primary-color, 15%);
+    @include transition(all .5s ease);
+}
+
+.btn-primary:active,
+.btn-primary.active,
+.open > .dropdown-toggle.btn-primary {
+    background-image: none;
+}
+
+.btn-primary .badge {
+    color: $primary-color;
+    background-color: $light-color;
+}
+
+.btn-xl {
+    padding: 15px 30px;
+}

@@ -1,0 +1,84 @@
+/*******************************************************
+* Bootstrap Fragrance v1.0
+* ©DONGSHIH TENG 2016
+/*******************************************************/
+footer {
+  .footer-top {
+    background-color: $dark-color;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: $light-color;
+    .footer-logo {
+      text-align: center;
+      @media screen and (min-width: $break-tablet)  {
+        text-align: left;
+      }
+      &>img,&>h3 {
+        display: inline-block;
+        vertical-align: bottom;
+      }
+      .img-valign {
+        vertical-align: middle;
+      }
+
+      img {
+        vertical-align: middle;
+        margin-bottom: 0.8em;
+        width: 45px;
+        height: 45px;
+      }
+      h3 {
+        font-size: 2.5em;
+      }
+      small {
+        display: block;
+        font-size: 17px;
+        color: darken($light-color, 20%);
+      }
+    }
+    .footer-sns {
+      text-align: center;
+      @media screen and (min-width: $break-tablet)  {
+        text-align: right;
+        float: right;
+      }
+    }
+  }
+  .footer-bottom {
+    width: 100%;
+    border-top: 1px solid darken($light-color, 15%);
+    text-align: center;
+    position: relative;
+    padding: 12px 0px;
+    background-color: $dark-color;
+    .copyright {
+      text-align: center;
+      @media screen and (min-width: $break-tablet)  {
+        float: right;
+      }
+      &>small {
+        color: darken($light-color, 15%);
+        a {
+          color: $secondary-color;
+          &:hover {
+            color: darken($secondary-color, 15%);
+          }
+        }
+      }
+    }
+    .sitemap {
+      @media screen and (min-width: $break-tablet)  {
+        float: left;
+      }
+      ul {
+        text-align: center;
+        margin: 0;
+        padding: 0;
+      }
+      li {
+        padding-right: 20px;
+        display: inline;
+      }
+    }
+  }
+}

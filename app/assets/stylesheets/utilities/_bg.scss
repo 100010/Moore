@@ -1,0 +1,144 @@
+@mixin bg-color($a, $b, $c, $percentage) {
+  background-color: $a;
+  color: $b;
+  a {
+    color: $c;
+    &:hover, &:focus {
+      color: darken($c, $percentage);
+    }
+    &.none-style {
+      color: $white-color;
+      &:hover {
+        color: $white-color;
+      }
+    }
+  }
+}
+/*******************************************************/
+/* Background colors                                   */
+/*******************************************************/
+.bg-white {
+  @include bg-color($white-color, $black-color, $green-color, 9%);
+}
+.bg-black {
+  @include bg-color($black-color, $white-color, $white-color, 10%);
+}
+.bg-dark {
+  @include bg-color($dark-color, $light-color, $white-color, 15%);
+}
+.bg-light {
+  @include bg-color($light-color, $dark-color, $light-color, 15%);
+}
+.bg-gray {
+  @include bg-color($light-gray-color, $primary-color, $light-color, 8%);
+}
+.bg-primary {
+  @include bg-color($primary-color, $light-color, $secondary-color, 10%);
+}
+.bg-secondary {
+  @include bg-color($secondary-color, $light-color, $blue-color, 10%);
+}
+.bg-red {
+  @include bg-color($red-color, $white-color, $orange-color, 8%);
+}
+.bg-pink {
+  @include bg-color($pink-color, $white-color, $red-color-90, 9%);
+}
+.bg-purple {
+  @include bg-color($purple-color, $white-color, $white-color, 15%);
+}
+.bg-blue {
+  @include bg-color($blue-color, $white-color, $green-color-20, 10%);
+}
+.bg-navy {
+  @include bg-color($navy-color, $light-color, $green-color, 10%);
+}
+.bg-cyan {
+  @include bg-color($cyan-color, $white-color, $teal-color, 10%);
+}
+.bg-teal {
+  @include bg-color($teal-color, $white-color, $cyan-color-30, 10%);
+}
+.bg-green {
+  @include bg-color($green-color, $white-color, $blue-color, 10%);
+}
+.bg-yellow {
+  @include bg-color($yellow-color, $white-color, $green-color-30, 10%);
+}
+.bg-orange {
+  @include bg-color($orange-color, $light-color, $red-color, 10%);
+}
+.bg-brown {
+  @include bg-color($brown-color, $white-color, $light-color, 10%);
+}
+
+/*******************************************************/
+/* Full bg image                                       */
+/*******************************************************/
+.full-bg {
+  width: 100%;
+  min-height: 100%;
+  text-align: center;
+  position: relative;
+  background-position: center;
+  background-image: url(http://blog.beautheme.com/wp-content/uploads/2015/11/freelancer-work-call.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  &.fixed {
+    background-attachment: fixed;
+  }
+  .full-bg-content {
+    width: 100%;
+    position: relative;
+    padding: 160px 20px;
+    text-align: center;
+    @media screen and (min-width: $break-md) {
+      top: 50%;
+      padding: 400 50px;
+    }
+    .full-bg-content-inner {
+      h1 {
+        font-size: 3.8em;
+        margin-top: 0;
+        margin-bottom: 0;
+        max-width: 100%;
+        font-weight: 800;
+        color: $light-color;
+        @media screen and (min-width: $break-md)  {
+          font-size: 5.2em;
+        }
+      }
+      hr {
+        border-color: $light-color;
+      }
+      p {
+        margin-bottom: 30px;
+        font-size: 17px;
+        font-weight: 400;
+        color: $light-color;
+        @media screen and (min-width: $break-md)  {
+          font-size: 22px;
+        }
+      }
+    }
+  }
+}
+@media(min-width:768px) {
+  full-bg .full-bg-content {
+    position: absolute;
+    @include transform(translateY(-50%));
+    .full-bg-content-inner {
+      margin-right: auto;
+      margin-left: auto;
+      max-width: 1000px;
+      p {
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 80%;
+        font-size: 20px;
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+/*******************************************************/
+/* border radius                                       */
+/*******************************************************/
+$sizes: (xs: 3px, sm: 8px, md: 14px, lg: 20px, xl: 30px ,card: 8px 40px, r-card: 40px 8px);
+@each $size, $pixel in $sizes {
+    .border-radius-#{$size} {
+      @include border-radius($pixel);
+    }
+}
+.round {
+  @include border-radius(50%);
+}

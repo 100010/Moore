@@ -1,0 +1,149 @@
+/*******************************************************/
+/* Bootstrap Fragrance v1.0                            */
+/* ©(DONGSHIH TENG) 2016                               */
+/*******************************************************/
+/* What you can find in this file                      */
+/* Special Colors                                      */
+/* Basic Colors                                        */
+/*******************************************************/
+
+/*******************************************************/
+/* Special Colors                                      */
+/*******************************************************/
+$dark-color:                #1e2a34;
+$light-color:               #e8ebec;
+$primary-color:             #3490db;
+$secondary-color:           #0cb650;
+
+$link-color:                #d2527f;
+$link-hover-color:          #cf2862;
+
+/*******************************************************/
+/* Basic Colors                                        */
+/*******************************************************/
+// red
+$red-color-10:             #f58383 !default;
+$red-color-20:             #f46c6c !default;
+$red-color-30:             #fa5b5b !default;
+$red-color-40:             #f05956 !default;
+$red-color-50:             #ed4242 !default;
+$red-color-60:             #f03737 !default;
+$red-color-70:             #f23737 !default;
+$red-color-80:             #f83131 !default;
+$red-color-90:             #ff0000 !default;
+// pink
+$pink-color-10:            #ed8dae !default;
+$pink-color-20:            #f17090 !default;
+$pink-color-30:            #ed5f82 !default;
+$pink-color-40:            #ee4e73 !default;
+$pink-color-50:            #ee2e70 !default;
+$pink-color-60:            #f1256b !default;
+$pink-color-70:            #f61f69 !default;
+$pink-color-80:            #ff0056 !default;
+$pink-color-90:            #ec0856 !default;
+// purple
+$purple-color-10:          #cf6ae9 !default;
+$purple-color-20:          #b84cd4 !default;
+$purple-color-30:          #ab3ac8 !default;
+$purple-color-40:          #9a2eb6 !default;
+$purple-color-50:          #8e24aa !default;
+$purple-color-60:          #7d1798 !default;
+$purple-color-70:          #710f8b !default;
+$purple-color-80:          #600b77 !default;
+$purple-color-90:          #48055b !default;
+// blue
+$blue-color-10:            #6fb3f9 !default;
+$blue-color-20:            #57a3f0 !default;
+$blue-color-30:            #4999eb !default;
+$blue-color-40:            #388add !default;
+$blue-color-50:            #297ed4 !default;
+$blue-color-60:            #1d6dbd !default;
+$blue-color-70:            #105daa !default;
+$blue-color-80:            #0b4987 !default;
+$blue-color-90:            #053769 !default;
+// cyan
+$cyan-color-10:            #7de7f2 !default;
+$cyan-color-20:            #52ccd9 !default;
+$cyan-color-30:            #3ebcc9 !default;
+$cyan-color-40:            #27adbb !default;
+$cyan-color-50:            #26a2af !default;
+$cyan-color-60:            #1d95a2 !default;
+$cyan-color-70:            #17828e !default;
+$cyan-color-80:            #127580 !default;
+$cyan-color-90:            #08535c !default;
+// teal
+$teal-color-10:            #6cddcf !default;
+$teal-color-20:            #58c3b6 !default;
+$teal-color-30:            #41a397 !default;
+$teal-color-40:            #329488 !default;
+$teal-color-50:            #268277 !default;
+$teal-color-60:            #1b6f65 !default;
+$teal-color-70:            #125e55 !default;
+$teal-color-80:            #0d554d !default;
+$teal-color-90:            #063630 !default;
+// green
+$green-color-10:           #78eb80 !default;
+$green-color-20:           #5cdd65 !default;
+$green-color-30:           #43cc4d !default;
+$green-color-40:           #31b93b !default;
+$green-color-50:           #24ac2e !default;
+$green-color-60:           #1d9d26 !default;
+$green-color-70:           #198520 !default;
+$green-color-80:           #136f19 !default;
+$green-color-90:           #0a540f !default;
+// yellow
+$yellow-color-10:          #f5e263 !default;
+$yellow-color-20:          #f5df4e !default;
+$yellow-color-30:          #f4db32 !default;
+$yellow-color-40:          #f5d91b !default;
+$yellow-color-50:          #f2d301 !default;
+$yellow-color-60:          #d4ba0c !default;
+$yellow-color-70:          #baa307 !default;
+$yellow-color-80:          #a38f0a !default;
+$yellow-color-90:          #95830d !default;
+// orange
+$orange-color-10:          #f5a364 !default;
+$orange-color-20:          #f5964e !default;
+$orange-color-30:          #fa8e3d !default;
+$orange-color-40:          #f47b20 !default;
+$orange-color-50:          #f4720f !default;
+$orange-color-60:          #e0690d !default;
+$orange-color-70:          #c15908 !default;
+$orange-color-80:          #b15105 !default;
+$orange-color-90:          #a4500c !default;
+// brown
+$brown-color-10:           #987368 !default;
+$brown-color-20:           #8a655a !default;
+$brown-color-30:           #815b4f !default;
+$brown-color-40:           #775145 !default;
+$brown-color-50:           #69463b !default;
+$brown-color-60:           #5c3c32 !default;
+$brown-color-70:           #4e3128 !default;
+$brown-color-80:           #412821 !default;
+$brown-color-90:           #36201a !default;
+// gray
+$gray-color-10:            #e4e4e4 !default;
+$gray-color-20:            #a4a4a4 !default;
+$gray-color-30:            #949494 !default;
+$gray-color-40:            #848484 !default;
+$gray-color-50:            #747474 !default;
+$gray-color-60:            #606060 !default;
+$gray-color-70:            #505050 !default;
+$gray-color-80:            #454545 !default;
+$gray-color-90:            #353535 !default;
+
+$black-color:              #000 !default;
+$white-color:              #fff !default;
+$light-gray-color:         $gray-color-10 !default;
+$gray-color:               $gray-color-50 !default;
+$red-color:                $red-color-50 !default;
+$pink-color:               $pink-color-50 !default;
+$purple-color:             $purple-color-50 !default;
+$blue-color:               $blue-color-50 !default;
+$navy-color:               $blue-color-90 !default;
+$cyan-color:               $cyan-color-50 !default;
+$teal-color:               $teal-color-50 !default;
+$green-color:              $green-color-50 !default;
+$yellow-color:             $yellow-color-50 !default;
+$orange-color:             $orange-color-50 !default;
+$brown-color:              $brown-color-50 !default;
